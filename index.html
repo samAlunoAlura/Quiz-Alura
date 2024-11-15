@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Quiz Alura</h1>
+        <p>Inicie algumas rodadas de questões de assuntos gerais</p>
+    </header>
+    <section class="botoes">
+        <div>
+            <span class="material-symbols-rounded" onclick="mudarModo()" id="spanModo">dark_mode</span>
+        </div>
+    </section>
+    <main>
+        <div class="secao-de-controles">
+            <button class="bt01">
+                <span class="material-symbols-rounded">history</span>
+                <p>Histórico</p>
+            </button>
+            <button class="bt02" id="cm" onclick="cmc()">
+                <span class="material-symbols-rounded">play_arrow</span>
+                <p>Começar</p>
+            </button>
+        </div>
+    </main>
+    <script src="src/index.js"></script>
+</body>
+</html>

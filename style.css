@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --corBase: #4cb394; --corTexto: #ffffff; --preto: #141316; --corTextoAlternativo: #000000; --corCartao:  #4cb394; --erro: #ff3f3f;
+}
+* {
+    padding: 0; margin: 0;
+}
+body {
+    background: var(--corTexto); font: normal 20pt "Poppins";
+}
+.modoEscuro {
+    --corBase: #68e6c0; --corTexto: #18142e; --preto: #141316; --corTextoAlternativo: #ffffff;  --erro: #ff527a;
+}
+header {
+    background: var(--corBase); padding: 40px; color: var(--corTexto); text-align: center;
+}
+h1 {
+    font-size: 2.5em;
+}
+span, button{
+    cursor: pointer;
+}
+.botoes > div {
+    justify-self: end; padding: 5px; color: var(--corTextoAlternativo);
+}
+.secao-de-controles {
+    display: flex; width: 40vw; margin: auto; padding: 20px; gap: 10px;
+}
+button {
+    width: 100%; border-radius: 20px; background: var(--corBase); border: none; padding: 20px; display: flex; align-items: center; justify-content: center; color: var(--corTexto); transition: all ease .3s;
+}
+.bt01 {
+    border: 2px solid var(--corBase); background: transparent; color: var(--corTextoAlternativo);
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.container {
+    width: 80vw; display: block; margin: auto;
+}
+.cartao {
+    border: 10px solid var(--corCartao); border-radius: 20px; color: var(--corTextoAlternativo); transition: all ease .5s;
+}
+.cartao h1 {
+    text-align: center; font-size: 1.2em; padding: 10px;
+}
+.cartao h2 {
+    background: var(--corCartao); font-size: .5em; padding-left: 20px; padding-bottom: 10px; color: var(--corTexto);
+}
+.cartao p {
+    font-size: .8em; width: 70%; margin: auto; text-align: justify; padding-bottom: 20px;
+}
+.cartao p::after, .cartao p::before {
+    content: '"';
+}
+
+.resp {
+    width: 100%; border: 4px solid var(--corBase); border-radius: 20px;padding: 10px; outline: none; font-size: 1em; margin-top: 40px; background: transparent; color: var(--corTextoAlternativo);
+}
+.resp::placeholder {
+    color: var(--corTextoAlternativo);
+}
+#contr {
+    display: flex;  margin-bottom: 20px; gap: 10px; width: 100%;
+}
+#sair {
+    rotate: 180deg; background: var(--erro);
+}
+#sair, #pular {
+    width: 44px; padding: 10px; border-radius: 10px; color: var(--corTexto);
+}
